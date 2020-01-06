@@ -1,0 +1,18 @@
+<span>下面按照 https://ng.ant.design/components/table/zh#components-table-demo-drag-sorting 代码copy的</span>
+<span>但是无法实现拖拽的效果</span>
+<nz-table [nzData]="listOfData" [nzFrontPagination]="false" [nzShowPagination]="false">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Address</th>
+    </tr>
+  </thead>
+  <tbody cdkDropList (cdkDropListDropped)="drop($event)">
+    <tr *ngFor="let data of listOfData" cdkDrag>
+      <td>{{ data.name }}</td>
+      <td>{{ data.age }}</td>
+      <td>{{ data.address }}</td>
+    </tr>
+  </tbody>
+</nz-table>

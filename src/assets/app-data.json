@@ -1,0 +1,36 @@
+{
+  "icon-resource1": "使用的是 https://ng.ant.design/components/icon/zh 的图标库,主题风格为 outlined;",
+  "icon-resource2": "使用时将该页面代码中的 `<i nz-icon nzType='mobile' nzTheme='outline'></i>` nzType 属性值 写在 anticon- 后面,当前例为 anticon-mobile;",
+  "icon-resource3": "如果页面没有显示图标,则前往 src/style-icons-auto.ts 在 import 和 export 中填在 nzType 属性值首字大写+Outline,当前例为 MobileOutline",
+  "app": {
+    "name": "lingting",
+    "description": "Ng-zorro admin panel front-end framework"
+  },
+  "user": {
+    "name": "Admin",
+    "avatar": "./assets/img/avatar.jpg",
+    "email": "cipchk@qq.com"
+  },
+  "menu": [
+    {
+      "text": "主导航",
+      "i18n": "menu.main",
+      "group": true,
+      "hideInBreadcrumb": true,
+      "children": [
+        {
+          "text": "数据统计",
+          "i18n": "menu.system",
+          "icon": "anticon-dashboard",
+          "children": [
+            {
+              "text": "默认页",
+              "link": "/system/main",
+              "i18n": "menu.system.main"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
